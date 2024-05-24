@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ljust/quarkus-test-app-public:1.0.0
+        image: ljust/quarkus-test-app-public:1.0.1
         ports:
         - containerPort: 8080
